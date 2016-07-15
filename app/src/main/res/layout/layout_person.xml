@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="@dimen/personimage_size"
+        android:layout_height="@dimen/personimage_size"
+        android:id="@+id/imageView_PersonImage"
+        android:layout_marginRight="@dimen/margin_personimage" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Name"
+        android:id="@+id/textView_PersonName"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView_PersonImage"
+        android:layout_toEndOf="@+id/imageView_PersonImage" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Age"
+        android:id="@+id/textView_PersonAge"
+        android:layout_alignBottom="@+id/textView_PersonName"
+        android:layout_toRightOf="@+id/textView_PersonName"
+        android:layout_marginLeft="@dimen/margin_personimage" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Comment"
+        android:id="@+id/textView_Comment"
+        android:layout_alignBottom="@+id/imageView_PersonImage"
+        android:layout_toRightOf="@+id/imageView_PersonImage"
+        android:layout_toEndOf="@+id/imageView_PersonImage" />
+
+</RelativeLayout>
